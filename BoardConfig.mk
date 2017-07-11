@@ -30,7 +30,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 TARGET_PREBUILT_KERNEL := device/samsung/on5ltetfntmo/prebuilt/kernel
-TARGET_PREBUILT_DTB := device/samsung/on5ltetfntmo/dt.img
+TARGET_PREBUILT_DTB := device/samsung/on5ltetfntmo/prebuilt/dt.img
 
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -40,6 +40,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/on5ltetfntmo/bootimg.mk
 
 # TWRP specific build flags
+RECOVERY_VARIANT= twrp
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
